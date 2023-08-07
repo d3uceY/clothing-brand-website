@@ -6,6 +6,7 @@
     --off-white: rgb(232, 226, 226);
     --header-mb: 30px;
     --section-mt: 8rem;
+    --orange: #f7a17e;
 }
 
 /* #bac9d0 */
@@ -223,7 +224,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .collections-box  {
+    .collections-box {
         width: 300px;
         height: 300px;
     }
@@ -231,9 +232,11 @@
 }
 
 @media screen and (max-width: 992px) {
-    .collections-box:nth-child(1), .collections-box{
+
+    .collections-box:nth-child(1),
+    .collections-box {
         width: 400px;
-        height: 400px;
+        height: 300px;
     }
 
     .collections-container {
@@ -242,6 +245,9 @@
         grid-column-gap: 20px;
         grid-template-rows: none;
         overflow-x: scroll;
+        scroll-snap-type: x mandatory;	
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll
     }
 
     .div1 {
@@ -264,7 +270,7 @@
         grid-area: 1 / 5 / 2 / 6;
     }
 
-    .collections-container::-webkit-scrollbar{
+    .collections-container::-webkit-scrollbar {
         width: 0px;
     }
 }
@@ -316,4 +322,59 @@
 .arrivals-content>p {
     color: grey;
     font-weight: 300;
+}
+
+/* hoodie-section css */
+
+.hoodie-container {
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    margin-top: var(--section-mt);
+}
+
+.hoodie-container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.hoodie-block {
+    width: 300px;
+    height: 400px;
+}
+
+.hoodie-image-container {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--off-white);
+}
+
+.hoodie-image-container img {
+    display: block;
+    height: 100%;
+}
+
+.price-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.price-container li {
+    list-style: none;
+}
+
+.price-container li:nth-child(2) {
+    color: orange;
+    font-weight: 400;
+}
+
+.price-container i {
+    font-size: 20px;
+}
+
+.price-container i:hover{
+    color: red;
 }
