@@ -184,25 +184,32 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin-top: 6rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .div1 {
+    scroll-snap-align: center;
     grid-area: 1 / 1 / 3 / 3;
 }
 
 .div2 {
+    scroll-snap-align: center;
     grid-area: 1 / 3 / 2 / 4;
 }
 
 .div3 {
+    scroll-snap-align: center;
     grid-area: 1 / 4 / 2 / 5;
 }
 
 .div4 {
+    scroll-snap-align: center;
     grid-area: 2 / 3 / 3 / 4;
 }
 
 .div5 {
+    scroll-snap-align: center;
     grid-area: 2 / 4 / 3 / 5;
 }
 
@@ -236,7 +243,7 @@
 
     .collections-box:nth-child(1),
     .collections-box {
-        width: 400px;
+        width: 300px;
         height: 300px;
     }
 
@@ -248,26 +255,30 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        overflow-x: scroll
     }
 
     .div1 {
+        scroll-snap-align: start;
         grid-area: 1 / 1 / 2 / 2;
     }
 
     .div2 {
+        scroll-snap-align: start;
         grid-area: 1 / 2 / 2 / 3;
     }
 
     .div3 {
+        scroll-snap-align: start;
         grid-area: 1 / 3 / 2 / 4;
     }
 
     .div4 {
+        scroll-snap-align: start;
         grid-area: 1 / 4 / 2 / 5;
     }
 
     .div5 {
+        scroll-snap-align: start;
         grid-area: 1 / 5 / 2 / 6;
     }
 
@@ -382,6 +393,25 @@
 
 /* .categories-section-css */
 
+.categories-section {
+    margin-top: var(--section-mt);
+}
+
+.categories-content>h1 {
+    margin-bottom: var(--header-mb);
+}
+
+
+.categories-content>p {
+    font-weight: 300;
+    color: grey;
+}
+
+.categories-container {
+    margin-top: var(--section-mt);
+}
+
+
 .categories-box {
     height: 300px;
     position: relative;
@@ -435,25 +465,32 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .categories-box-1 {
+    scroll-snap-align: center;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .categories-box-2 {
+    scroll-snap-align: center;
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .categories-box-3 {
+    scroll-snap-align: center;
     grid-area: 1 / 3 / 2 / 4;
 }
 
 .categories-box-4 {
+    scroll-snap-align: center;
     grid-area: 2 / 1 / 3 / 2;
 }
 
 .categories-box-5 {
+    scroll-snap-align: center;
     grid-area: 2 / 2 / 3 / 4;
 }
 
