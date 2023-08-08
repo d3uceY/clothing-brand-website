@@ -7,7 +7,7 @@
     --header-mb: 30px;
     --header-mb-mobile: 20px;
     --section-mt: 8rem;
-    --section-mt-mobile: 3rem;
+    --section-mt-mobile: 6rem;
     --orange: #f7a17e;
     --off-white-2: #f4f4f5;
     --grey: #f3f2f3;
@@ -577,7 +577,7 @@
 .coming-soon-write-up p {
     color: var(--white);
     text-transform: capitalize;
-    font-weight: 200;
+    font-weight: 300;
     text-wrap: balance;
 }
 
