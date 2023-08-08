@@ -743,7 +743,10 @@ footer {
     footer {
         margin-top: var(--section-mt-mobile);
     }
+}
 
-
-
+@media screen and (max-width: 768px){
+    .coming-soon-write-up{
+        margin-bottom: 3rem;
+    }
 }
