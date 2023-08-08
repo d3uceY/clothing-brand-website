@@ -86,7 +86,6 @@
     width: 35px;
     height: 35px;
     padding: 2px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -96,6 +95,7 @@
     height: 4px;
     width: 100%;
     background: #000;
+    border-radius: 20px;
 
 }
 
@@ -185,7 +185,7 @@
 
 /* top collections container css */
 .top-collections-section {
-    margin-top: 8rem;
+    margin-top: var(--section-mt);
 }
 
 .top-collections-content>h1 {
@@ -695,7 +695,7 @@ footer {
 
 /* media query css */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
     .navigation-list {
         position: fixed;
         height: 100%;
@@ -704,8 +704,12 @@ footer {
         z-index: 5;
         flex-direction: column;
         width: 70%;
-        right: 0px;
+        right: -100%;
         padding: 20px;
+    }
+
+    .navigation-list.clicked {
+        right: 0px;
     }
 
     .navigation-list>li {
@@ -716,5 +720,31 @@ footer {
     .navigation-list li a {
         font-size: 30px;
     }
+
+    .close-button i {
+        font-size: 30px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .hero-content button {
+        padding: 8px 15px;
+        font-size: small;
+    }
+
+    .top-collections-section,
+    .arrivals-section,
+    .categories-section,
+    .collections-container,
+    .hoodie-container,
+    .categories-container,
+    .newsletter-section,
+    .coming-soon-section,
+    footer {
+        margin-top: var(--section-mt-mobile);
+    }
+
+
 
 }
