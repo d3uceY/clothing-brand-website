@@ -121,7 +121,7 @@
 }
 
 .hero-content p {
-    color: var(--off-white-2);
+    color: var(--white);
 }
 
 .hero-content button {
@@ -150,7 +150,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 .hero-image {
@@ -705,6 +704,7 @@ footer {
         width: 70%;
         right: -100%;
         padding: 20px;
+        transition: all 250ms ease-in-out;
     }
 
     .navigation-list.clicked {
