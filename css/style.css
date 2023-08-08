@@ -539,3 +539,26 @@
 
 
 }
+
+/* coming-soon css */
+.coming-soon-content{
+    padding: 40px;
+}
+
+.coming-soon-write-up h1{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+
+.coming-soon-write-up p{
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.coming-soon-content img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
