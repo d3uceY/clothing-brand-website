@@ -5,9 +5,12 @@
     --hero-bg: linear-gradient(to bottom, #9d9da3, #a5a8af, #acb2ba, #b3bec6, #bac9d0);
     --off-white: rgb(232, 226, 226);
     --header-mb: 30px;
+    --header-mb-mobile: 20px;
     --section-mt: 8rem;
+    --section-mt-mobile: 3rem;
     --orange: #f7a17e;
     --off-white-2: #f4f4f5;
+    --grey: #f3f2f3;
 }
 
 /* #bac9d0 */
@@ -20,6 +23,7 @@
     padding: 0px;
     box-sizing: border-box !important;
     font-family: 'Outfit', sans-serif;
+    list-style: none;
 }
 
 /* navigation css */
@@ -78,6 +82,23 @@
     gap: 20px;
 }
 
+.hamburger-icon-button {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hamburger-icon-button .bar {
+    height: 4px;
+    width: 100%;
+    background: #000;
+
+}
+
 /* hero-container css */
 
 .hero-container {
@@ -101,7 +122,7 @@
 }
 
 .hero-content p {
-    color: var(--off-white);
+    color: var(--off-white-2);
 }
 
 .hero-content button {
@@ -541,24 +562,159 @@
 }
 
 /* coming-soon css */
-.coming-soon-content{
-    padding: 40px;
+.coming-soon-section {
+    margin-top: var(--section-mt);
 }
 
-.coming-soon-write-up h1{
+.coming-soon-content {
+    padding: 40px;
+    gap: calc(20px + 1.5vh);
+}
+
+.coming-soon-write-up h1 {
     color: var(--white);
     text-transform: uppercase;
 }
 
-
-.coming-soon-write-up p{
+.coming-soon-write-up p {
     color: var(--white);
     text-transform: capitalize;
-    font-weight: 300;
+    font-weight: 200;
+    text-wrap: balance;
 }
 
-.coming-soon-content img{
+.coming-soon-content img {
     width: 400px;
     height: 300px;
     object-fit: cover;
+}
+
+/* newsletter-section css */
+
+.newsletter-section {
+    background: var(--grey);
+    margin-top: var(--section-mt);
+}
+
+.newsletter-content {
+    padding: 25px;
+    overflow-x: hidden;
+}
+
+.newsletter-write-up>p {
+    font-weight: 300;
+}
+
+.newsletter-input-container {
+    margin-top: var(--section-mt-mobile);
+}
+
+.newsletter-input-box {
+    position: relative;
+    left: 30px;
+}
+
+.newsletter-input-container>div>input:nth-child(1) {
+    border: 0px;
+    outline: none;
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.newsletter-input-container>div>input:nth-child(2) {
+    border: 0px;
+    outline: none;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    right: 45px;
+    position: relative;
+
+}
+
+/* footer section css */
+
+footer {
+    margin-top: var(--section-mt);
+}
+
+.footer-content {
+    padding: 30px 30px 20px 30px;
+}
+
+.footer-content>div>ul li a {
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 14px;
+    width: fit-content;
+    margin-right: 0px;
+}
+
+
+.footer-content>div>ul li a:hover {
+    color: white;
+}
+
+.footer-content>div>ul li {
+    position: relative;
+    width: fit-content;
+}
+
+.footer-content>div>ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    transform: scale(0);
+    background: var(--white);
+    transition: transform 250ms ease-out
+}
+
+.footer-content>div>ul li a:hover:before {
+    transform: scale(1);
+}
+
+
+.footer-content>div>ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-content div:nth-child(2) {
+    border-top: .4px solid grey;
+    padding: 20px;
+}
+
+.footer-content div:nth-child(2) p {
+    font-weight: 200;
+}
+
+
+/* media query css */
+
+@media screen and (max-width: 500px) {
+    .navigation-list {
+        position: fixed;
+        height: 100%;
+        background: white;
+        top: 0px;
+        z-index: 5;
+        flex-direction: column;
+        width: 70%;
+        right: 0px;
+        padding: 20px;
+    }
+
+    .navigation-list>li {
+        display: block;
+        border-bottom: 1px solid;
+    }
+
+    .navigation-list li a {
+        font-size: 30px;
+    }
+
 }
