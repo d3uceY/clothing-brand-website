@@ -188,12 +188,14 @@
 
 .top-collections-content>h1 {
     margin-bottom: var(--header-mb);
+    overflow-y: hidden;
 }
 
 .top-collections-content>p {
     max-width: 450px;
     color: grey;
     font-weight: 300;
+    overflow-y: hidden;
 }
 
 .collections-container {
@@ -356,6 +358,7 @@
     gap: 10px;
     margin-top: var(--section-mt);
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
 }
 
 .hoodie-container::-webkit-scrollbar {
@@ -655,6 +658,7 @@ footer {
 .footer-content>div>ul li a:hover {
     color: white;
 }
+
 
 .footer-content>div>ul li {
     position: relative;
