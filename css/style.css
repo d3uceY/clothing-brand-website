@@ -742,11 +742,15 @@ footer {
         font-size: 30px;
     }
 
+    .close-button{
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        left: 271px;
+    }
+
     .close-button i {
         font-size: 30px;
-        position: absolute;
-        right: 20px;
-        top: 10px;
     }
 
     .hero-content button {
