@@ -82,7 +82,7 @@ gsap.from('.navigation-item', {
      opacity: 0,
      y:'80px',
      duration: 1,
-     ease: "power3.out",
+     ease: "power2.out",
      scrollTrigger: '.collection-header'
   })
 
@@ -90,7 +90,7 @@ gsap.from('.navigation-item', {
     opacity: 0,
     y:'30px',
     duration: 1.5,
-    ease: "power3.out",
+    ease: "power2.out",
     scrollTrigger: '.collection-paragraph'
  })
 
