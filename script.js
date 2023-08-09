@@ -94,11 +94,11 @@ gsap.from('.navigation-item', {
     scrollTrigger: '.collection-paragraph'
  })
 
- gsap.from('.collections-container .collections-box', {
-  delay: .4,
-  opacity: 0.1,
-  duration: 1,
-  stagger: .1,
+ gsap.from('.collections-container', {
+  opacity: 0,
+  y:'20%',
+  duration: 1.5,
+  ease: "power3.out",
   scrollTrigger: '.collections-container'
 })
 
