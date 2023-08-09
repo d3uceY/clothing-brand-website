@@ -141,6 +141,13 @@
     width: fit-content;
     cursor: pointer !important;
     z-index: 1;
+    transition: all 250ms ease-in;
+}
+
+.hero-content button:hover{
+    background: #1a1a1a;
+    cursor: pointer;
+
 }
 
 .hero-content button a {
@@ -331,6 +338,12 @@
     cursor: pointer;
     color: white;
     margin-top: 10px;
+    transition: all 250ms ease-in;
+}
+
+.collections-write-up button:hover{
+    background: #1a1a1a;
+    cursor: pointer;
 }
 
 .collections-write-up>p {
