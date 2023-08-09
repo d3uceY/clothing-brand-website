@@ -28,7 +28,7 @@
 /* navigation css */
 .navigation {
     background: var(--white);
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 
@@ -743,14 +743,14 @@ footer {
     }
 
     .close-button{
-        position: relative;
-        height: fit-content;
-        width: fit-content;
-        left: 271px;
+        height: 50px;
     }
 
     .close-button i {
         font-size: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
 
     .hero-content button {
