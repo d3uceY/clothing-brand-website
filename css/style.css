@@ -95,7 +95,11 @@
     width: 100%;
     background: #000;
     border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
 
+.hamburger-icon-button:hover> .bar:nth-child(2){
+    width: 50%;
 }
 
 /* hero-container css */

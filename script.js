@@ -12,6 +12,10 @@ menuCloseButton.addEventListener('click', () => {
     navBar.classList.remove('clicked');
 })
 
+window.addEventListener('scroll', () => {
+  navBar.classList.remove('clicked');
+})
+
 //gsap animations
 gsap.registerPlugin(ScrollTrigger)
 
