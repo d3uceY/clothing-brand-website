@@ -159,7 +159,7 @@ gsap.from('.coming-soon-write-up', {
 
 gsap.from('.comming-soon-image', {
   opacity: 0,
-  x:20,
+  y:'20%',
   duration: 1.5,
   ease: "power3.out",
   scrollTrigger: '.comming-soon-image'
