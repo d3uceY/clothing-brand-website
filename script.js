@@ -63,10 +63,9 @@ gsap.from('.navigation-item', {
 
   gsap.from('.hero-content > button', {
     opacity: 0,
-    y: '50%',
+    y: '20%',
     duration: .5,
-    delay: 1.2,
-    ease: "power3.out",
+    delay: .9,
     scrollTrigger: '.hero-content > button'
   })
 
