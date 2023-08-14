@@ -95,7 +95,7 @@ gsap.from('.navigation-item', {
 
  gsap.from('.collections-container', {
   opacity: 0,
-  y:'10%',
+  y:'10px',
   duration: 1.5,
   ease: "power3.out",
   scrollTrigger: '.collections-container'
