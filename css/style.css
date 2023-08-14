@@ -776,3 +776,14 @@ footer {
         margin-bottom: 3rem;
     }
 }
+
+
+/* section blur event */
+.section{
+    transition: filter 200ms ease-in;
+}
+
+
+.section.blur{
+  filter: blur(10px);
+}
