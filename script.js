@@ -64,7 +64,7 @@ gsap.from('.navigation-item', {
   gsap.from('.hero-content > button', {
     opacity: 0,
     y: '20%',
-    duration: .5,
+    duration: .1,
     delay: .9,
     scrollTrigger: '.hero-content > button'
   })
@@ -80,7 +80,7 @@ gsap.from('.navigation-item', {
   gsap.from('.collection-header', {
      opacity: 0,
      y:'80px',
-     duration: 1,
+     duration: .1,
      ease: "power2.out",
      scrollTrigger: '.collection-header'
   })
@@ -95,7 +95,7 @@ gsap.from('.navigation-item', {
 
  gsap.from('.collections-container', {
   opacity: 0,
-  y:'20%',
+  y:'10%',
   duration: 1.5,
   ease: "power3.out",
   scrollTrigger: '.collections-container'
@@ -122,7 +122,7 @@ gsap.from('.arrival-paragraph', {
 gsap.from('.hoodie-block', {
   opacity: 0.01,
   y:'10%',
-  duration: 1.5,
+  duration: .5,
   ease: "power3.out",
   stagger:.2,
   scrollTrigger: '.hoodie-block'
