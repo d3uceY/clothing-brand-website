@@ -107,7 +107,7 @@
 
 .hero-container {
     background: var(--hero-bg);
-    height: 95vh;
+    height: 100vh;
 }
 
 .hero-content {
@@ -326,7 +326,7 @@
 }
 
 .collections-write-up button {
-    width: fit-content;
+    width: fit-content; 
     outline: none;
     border: none;
     padding: 10px 20px;

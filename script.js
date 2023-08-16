@@ -7,7 +7,6 @@ const sections = document.querySelectorAll('.section');
 
 menuButton.addEventListener('click', () => {
   navBar.classList.add('clicked');
-
   sections.forEach((sections) => {
     sections.classList.add('blur')
   });
@@ -16,7 +15,6 @@ menuButton.addEventListener('click', () => {
 
 menuCloseButton.addEventListener('click', () => {
   navBar.classList.remove('clicked');
-
   sections.forEach((sections) => {
     sections.classList.remove('blur')
   });
